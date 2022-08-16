@@ -141,6 +141,10 @@ main{
         border: none;
         cursor: pointer;
     }
+    span{
+        color: $input-warning;
+        display: none;
+    }
 }
 #subscribe{
     display: none;
@@ -176,12 +180,17 @@ main{
         border: 1px solid black;
     }
     button{
+        margin-top: 10px;
         margin-bottom: 15px;
         padding: 12px 24px;
         background-color: $color-green;
         color: $color-white;
         border: none;
         cursor: pointer;
+    }
+    span{
+        color: $input-warning;
+        display: none;
     }
 }
 @media screen and (max-width:992px) {

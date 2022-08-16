@@ -5,6 +5,7 @@ nav{
     width: 260px;
     height: 100vh;
     padding: 16px;
+    padding-right: 32px;
     background-color: $color-light-white;
     overflow-y: scroll;
    
@@ -42,6 +43,12 @@ nav{
         color: $color-white;
         border: none;
         cursor: pointer;
+    }
+    span{
+        display: none;
+        color:$input-warning;
+        font-size: 13px;
+        font-weight: 500;
     }
     .fa-xmark{
         float: right;

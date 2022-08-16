@@ -57,6 +57,7 @@ nav {
   width: 260px;
   height: 100vh;
   padding: 16px;
+  padding-right: 32px;
   background-color: #f1f1f1;
   overflow-y: scroll;
 }
@@ -94,6 +95,12 @@ nav button {
   color: #ffffff;
   border: none;
   cursor: pointer;
+}
+nav span {
+  display: none;
+  color: red;
+  font-size: 13px;
+  font-weight: 500;
 }
 nav .fa-xmark {
   float: right;
@@ -283,6 +290,10 @@ main hr {
   border: none;
   cursor: pointer;
 }
+#contact span {
+  color: red;
+  display: none;
+}
 
 #subscribe {
   display: none;
@@ -319,12 +330,17 @@ main hr {
   border: 1px solid black;
 }
 #subscribe button {
+  margin-top: 10px;
   margin-bottom: 15px;
   padding: 12px 24px;
   background-color: #4caf50;
   color: #ffffff;
   border: none;
   cursor: pointer;
+}
+#subscribe span {
+  color: red;
+  display: none;
 }
 
 @media screen and (max-width: 992px) {
