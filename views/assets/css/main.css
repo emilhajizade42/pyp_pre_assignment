@@ -102,6 +102,10 @@ nav button {
   border: none;
   cursor: pointer;
 }
+nav button:hover {
+  color: #000000;
+  background-color: #acacac;
+}
 nav span {
   display: none;
   color: red;
@@ -270,7 +274,7 @@ main hr {
 }
 #rules button:hover {
   color: #000000;
-  background-color: #f1f1f1;
+  background-color: #acacac;
 }
 
 #contact h4 {
@@ -302,7 +306,7 @@ main hr {
 }
 #contact button:hover {
   color: #000000;
-  background-color: #f1f1f1;
+  background-color: #acacac;
 }
 #contact span {
   color: red;
@@ -354,7 +358,7 @@ main hr {
 }
 #subscribe button:hover {
   color: #000000;
-  background-color: #f1f1f1;
+  background-color: #acacac;
 }
 #subscribe span {
   color: red;
@@ -381,7 +385,7 @@ main hr {
   }
   #contact button:hover, #rules button:hover {
     color: #000000;
-    background-color: #f1f1f1;
+    background-color: #acacac;
   }
   #subscribe {
     width: 100%;

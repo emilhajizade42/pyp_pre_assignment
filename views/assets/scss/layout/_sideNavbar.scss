@@ -43,6 +43,10 @@ nav{
         color: $color-white;
         border: none;
         cursor: pointer;
+        &:hover{
+            color: $color-dark;
+            background-color: $color-light-gray;
+        }
     }
     span{
         display: none;
