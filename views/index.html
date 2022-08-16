@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./views/assets/imgs/circle-check-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./views/assets/css/main.css">
+    <title>Emil Hajizada</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header start -->
+        <header>
+            <h1>Rental</h1>
+            <span id="headerMenuBtn"><i class="fa-solid fa-bars"></i></span>
+        </header>
+        <div class="header_holder"></div>
+        <!-- Header start -->
+        <!-- Navbar start -->
+        <nav>
+            
+            <i class="fa-solid fa-xmark"></i>
+            <h2 class="nav_header">Rental</h2>
+            <div class="nav_header_tail">from $99</div>
+            <p class="nav_header_decription">per night</p>
+            <hr/>
+            <form action="#" method="get">
+                <label><i class="fa-regular fa-calendar-check"></i> Check In</label>
+                <input type="datetime" placeholder="DD MM YYYY" required name="" id="">
+                <label><i class="fa-regular fa-calendar"></i>  Check Out</label>
+                <input type="datetime" placeholder="DD MM YYYY" required name="" id="">
+                <label><i class="fa-solid fa-person"></i>Adults</label>
+                <input type="number" value="1" required name="" id="">
+                <label><i class="fa-solid fa-child-reaching"></i>Kids</label>
+                <input type="number" value="0" required name="" id="">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i><span>Search availability</span></button>
+            </form>
+            <ul>
+                <li><a href="#slider"><i class="fa-solid fa-building"></i>Apartment</a></li>
+                <li><a href="#"><i class="fa-solid fa-house-signal"></i>Subscribe</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+            </ul>
+        </nav>
+        <div class="navBgBlocker"></div>
+        <!-- Navbar end -->
+        <!-- Main start -->
+        <main>
+            <!-- Slider start -->
+            <section id="slider">
+                <h3>The Apartment</h3>
+                <img src="./views/assets/imgs/diningroom.jpg" alt="foto" width="100%">
+                <div class="imgbox">
+                    <img src="./views/assets/imgs/bedroom.jpg" alt="foto" width="24%">
+                    <img src="./views/assets/imgs/livingroom.jpg" alt="foto" width="24%">
+                    <img src="./views/assets/imgs/diningroom.jpg" alt="foto" width="24%">
+                    <img src="./views/assets/imgs/livingroom2.jpg" alt="foto" width="24%">
+                </div>
+            </section>
+            <!-- Slider end -->
+            <!-- Space start -->
+            <section id="space">
+                <h4>The space</h4>
+                <div class="space_box">
+                    <div>
+                        <div><i class="fa-solid fa-person"></i>Max people: 4</div>
+                        <div><i class="fa-solid fa-bath"></i>Bathrooms: 2</div>
+                        <div><i class="fa-solid fa-bed"></i>Bedrooms: 1</div>
+                    </div>
+                    <div>
+                        <div><i class="fa-regular fa-clock"></i>Check In: After 3PM</div>
+                        <div><i class="fa-regular fa-clock"></i>Check Out: 12PM</div>
+                    </div>
+                </div>
+                <hr/>
+            </section>
+            <!-- Space end -->
+            <!-- amenities start -->
+            <section id="amenities">
+                <h4>Amenities</h4>
+                <div class="amenities_box">
+                    <div>
+                        <div><i class="fa-solid fa-shower"></i>Shower</div>
+                        <div><i class="fa-solid fa-wifi"></i>WiFi</div>
+                        <div><i class="fa-solid fa-tv"></i>TV</div>
+                    </div>
+                    <div>
+                        <div><i class="fa-solid fa-utensils"></i>Kitchen</div>
+                        <div><i class="fa-solid fa-temperature-three-quarters"></i>Heating</div>
+                        <div><i class="fa-brands fa-accessible-icon"></i>Accessible</div>
+                    </div>
+                </div>
+                <hr/>
+            </section>
+            <!-- amenities end -->
+            <!-- extra_info start -->
+            <section id="extra_info">
+                <h4>Extra Info</h4>
+                <p>Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div>
+                    We accept:
+                    <i class="fa-regular fa-credit-card"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-discover"></i>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                </div>
+                <hr/>
+            </section>
+            <!-- extra_info end -->
+            <!-- rules start -->
+            <section id="rules">
+                <h4>Rules</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div>Subscribe to receive updates on available dates and special offers.</div>
+                <button>Subscribe</button>
+                <hr/>
+            </section>
+            <!-- rules end -->
+            <!-- contact start -->
+            <section id="contact">
+                <h4>Contact</h4>
+                <div><i class="fa-solid fa-location-dot"></i>Chicago, US</div>
+                <div><i class="fa-solid fa-phone"></i>Phone: +00 151515</div>
+                <div><i class="fa-solid fa-envelope"></i>Email: mail@mail.com</div>
+                <p>Questions? Go ahead, ask them:</p>
+                <form action="#">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Message" required>
+                    <button>Send a Message</button>
+                </form>
+            </section>
+            <!-- contact end -->
+        </main>
+        <!-- Main end -->
+        <!-- footer start -->
+        <footer>Powered by Emil Hajizada</footer>
+        <!-- footer end -->
+    </div>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>

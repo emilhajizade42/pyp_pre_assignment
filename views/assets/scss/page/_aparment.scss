@@ -1,0 +1,129 @@
+.container{
+    position: relative;
+    max-width: 980px;
+    min-height: 100vh;
+    margin:0 auto;
+    border: 1px solid  black;
+}
+main{
+    min-height: 150vh;
+    margin-left: 260px;
+    padding: 0 16px;
+    hr{
+        margin: 20px 0;
+    }
+}
+#slider{
+    margin-bottom: 20px;
+    h3{
+        margin: 10px 0;
+        font-size: 30px;
+        color: $color-green;
+    }
+}
+#space{
+    h4{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+.space_box{
+    display: flex;
+    &>div{
+        width: 50%;
+        &>div{
+            margin: 18px 0;
+        }
+        i{
+            margin-right: 8px;
+        }
+    }
+}  
+#amenities{
+    h4{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+.amenities_box{
+    display: flex;
+    &>div{
+        width: 50%;
+        &>div{
+            margin: 18px 0;
+        }
+        i{
+            margin-right: 8px;
+        }
+    }
+}        
+#extra_info{
+    h4{
+        margin: 10px 0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    p,div{
+        margin: 15px 0;
+    }
+}
+#rules
+{
+    h4{
+        margin: 10px 0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    p,div{
+        margin: 15px 0;
+    }
+    button{
+        width: 250px;
+        padding: 8px 16px;
+        background-color: $color-green;
+        color: $color-white;
+        border: none;
+        cursor: pointer;
+    }
+}
+#contact{
+    h4{
+        margin: 15px 0;
+        font-size: 30px;
+    }
+    div{
+        margin: 10px 0;
+    }
+    p{
+        margin: 15px 0;
+    }
+    i{
+        margin-right:8px ;
+    }
+    input{
+        width: 100%;
+        height: 40px;
+        padding: 8px;
+        margin: 10px 0;
+    }
+    button{
+        width: 240px;
+        padding: 8px 16px;
+        background-color: $color-green;
+        color: $color-white;
+        border: none;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width:992px) {
+    main{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:600px) {
+    #contact,#rules{
+        button{
+            width: 100%;
+        }
+    }
+}
