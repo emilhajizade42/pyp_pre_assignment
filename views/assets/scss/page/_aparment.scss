@@ -20,6 +20,33 @@ main{
         font-size: 30px;
         color: $color-green;
     }
+    .mainSliderImg{
+        position: relative;
+        width: 100%;
+    }
+    span{
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        background-color: $color-dark;
+        color: $color-white;
+        padding:16px;
+    }
+    .imgbox{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            cursor: pointer;
+            opacity: 0.4;
+            &:hover{
+                opacity: 1;
+            }
+            &.active{
+                opacity: 1;
+            }
+        }
+    }
 }
 #space{
     h4{
@@ -115,9 +142,60 @@ main{
         cursor: pointer;
     }
 }
+#subscribe{
+    display: none;
+    position: fixed;
+    top: 93px;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%,0%);
+    background-color: $color-white;
+    padding: 12px 40px;
+    text-align: center;
+    width: 900px;
+    .fa-xmark{
+        float: right;
+        font-weight: bold;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    h5{
+        font-size: 30px;
+        letter-spacing: 4px;
+        font-weight: 400;
+        margin: 10px 0;
+    }
+    p{
+        margin: 15px 0;
+    }
+    input{
+        display: block;
+        width:100%;
+        padding: 8px;
+        margin: 15px 0;
+        border: 1px solid black;
+    }
+    button{
+        margin-bottom: 15px;
+        padding: 12px 24px;
+        background-color: $color-green;
+        color: $color-white;
+        border: none;
+        cursor: pointer;
+    }
+}
 @media screen and (max-width:992px) {
     main{
         margin-left: 0;
+    }
+    #subscribe{
+        width: 600px;
+    }
+}
+@media screen and (max-width:768px) {
+    #subscribe{
+        width: 500px;
+        top: 56px;
     }
 }
 @media screen and (max-width:600px) {
@@ -125,5 +203,8 @@ main{
         button{
             width: 100%;
         }
+    }
+    #subscribe{
+        width: 100%;
     }
 }

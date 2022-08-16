@@ -166,6 +166,33 @@ main hr {
   font-size: 30px;
   color: #4caf50;
 }
+#slider .mainSliderImg {
+  position: relative;
+  width: 100%;
+}
+#slider span {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 16px;
+}
+#slider .imgbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#slider .imgbox img {
+  cursor: pointer;
+  opacity: 0.4;
+}
+#slider .imgbox img:hover {
+  opacity: 1;
+}
+#slider .imgbox img.active {
+  opacity: 1;
+}
 
 #space h4 {
   font-size: 20px;
@@ -257,13 +284,68 @@ main hr {
   cursor: pointer;
 }
 
+#subscribe {
+  display: none;
+  position: fixed;
+  top: 93px;
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%, 0%);
+  background-color: #ffffff;
+  padding: 12px 40px;
+  text-align: center;
+  width: 900px;
+}
+#subscribe .fa-xmark {
+  float: right;
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
+}
+#subscribe h5 {
+  font-size: 30px;
+  letter-spacing: 4px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+#subscribe p {
+  margin: 15px 0;
+}
+#subscribe input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 15px 0;
+  border: 1px solid black;
+}
+#subscribe button {
+  margin-bottom: 15px;
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 992px) {
   main {
     margin-left: 0;
   }
+  #subscribe {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #subscribe {
+    width: 500px;
+    top: 56px;
+  }
 }
 @media screen and (max-width: 600px) {
   #contact button, #rules button {
+    width: 100%;
+  }
+  #subscribe {
     width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
