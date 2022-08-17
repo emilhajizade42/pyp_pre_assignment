@@ -9,6 +9,7 @@ const subscribeButton = document.querySelector("#subscribe button");
 navButton.addEventListener("click", function (e) {
   e.preventDefault();
   navInputs.forEach((inp) => {
+    removeInputwarning(inp)
     validateInputAll(inp);
   });
 });
@@ -16,6 +17,7 @@ navButton.addEventListener("click", function (e) {
 contactButton.addEventListener("click", function (e) {
   e.preventDefault();
   contactInputs.forEach((inp) => {
+    removeInputwarning(inp)
     validateInputAll(inp);
   });
 });
@@ -23,6 +25,7 @@ contactButton.addEventListener("click", function (e) {
 subscribeButton.addEventListener("click", function (e) {
   e.preventDefault();
   subscribeInputs.forEach((inp) => {
+    removeInputwarning(inp)
     validateInputAll(inp);
   });
 });
@@ -33,20 +36,25 @@ function validateInputAll(element) {
   if (value.trim() === "") {
     inputWarning.innerHTML = "This field is required"
     inputWarning.style.display="block";
+    return;
   }
   else if(element.getAttribute("type")==="num" && !(/^\d+\.?\d*$/).test(value)){
     inputWarning.innerHTML = "Format is not vaild"
     inputWarning.style.display="block";
+    return;
   }
   else if(element.getAttribute("type")==="email" && !value.includes("@")){
     inputWarning.innerHTML = "Email is not vaild"
     inputWarning.style.display="block";
+    return;
   }
   else if(element.getAttribute("type")==="datetime" && !(/^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$/).test(value)){
     inputWarning.innerHTML = "Date is not vaild"
     inputWarning.style.display = "block";
+    return;
   }
-  else{
-    inputWarning.style.display = "none";
-  }
+}
+// Remove input warning msg
+function removeInputwarning(element){
+  element.nextSibling.nextSibling.style.display = "none";
 }
