@@ -309,6 +309,8 @@ main hr {
   background-color: #acacac;
 }
 #contact span {
+  font-size: 13px;
+  font-weight: 500;
   color: red;
   display: none;
 }
@@ -361,6 +363,8 @@ main hr {
   background-color: #acacac;
 }
 #subscribe span {
+  font-size: 13px;
+  font-weight: 500;
   color: red;
   display: none;
 }
